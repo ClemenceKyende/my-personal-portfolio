@@ -1,0 +1,127 @@
+/* Basic resets */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    padding: 30px;
+}
+
+/* Title styles */
+h1, h2, h3 {
+    color: #007BFF;
+    font-family: Arial, sans-serif;
+    margin: 30px 0 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "skills-hobbies"
+        "footer";
+    gap: 20px;
+}
+
+/* Navbar styles */
+#navbarDiv {
+    grid-area: navbar;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#navbarDiv .nav-link {
+    color: #007BFF;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+#navbarDiv .nav-link:hover {
+    color: #fff;
+    background-color: #007BFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active {
+    background-color: #fff;
+    font-weight: bold !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+#headerDiv {
+    grid-area: header;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills and Hobbies Section */
+#skills-hobbies {
+    grid-area: skills-hobbies;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+#footerDiv {
+    grid-area: footer;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section */
+.container.mt-5 {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+                "navbar"
+                "header"
+                "skills-hobbies"
+                "footer";
+    }
+}
+
+@media (min-width: 601px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
